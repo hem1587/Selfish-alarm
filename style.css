@@ -134,13 +134,24 @@ hr{
     text-decoration: none;
     color: silver;
 }
-.sub-menu2{
+#sub-menu2{
     display: none;
 }
-#nav-bar2 ul li:hover .sub-menu2{
+#nav-bar2 ul li:hover {
+    background: #2bab0b;
+    border-radius: 3px;
+}
+#nav-bar2 ul li:hover #sub-menu2{
     display: block;
     position: absolute;
     background-color: azure;
     margin-top: 15px;
     margin-left: -15px;
+}
+#nav-bar2 ul li:hover #sub-menu2 ul{
+    display: block;
+    margin: 10px;
+}
+#sub-menu3{
+    display: none;
 }
