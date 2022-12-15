@@ -3,6 +3,7 @@
     padding: 0;
    
 }
+
 .logo{
     margin-right: 400px;
 }
@@ -112,7 +113,7 @@ display: none;
     display: block;
     margin: 10px;
 }
-hr{
+#one>hr{
     width: 100%;
     height: 5px;
     color: #000;
@@ -152,4 +153,122 @@ hr{
 #nav-bar2 ul li:hover .sub-menu2 ul{
     display: block;
     margin: 10px;
+}
+.sub-cate {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.sub-cate img{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 50px;
+    
+}
+#offer{
+display: flex;
+gap: 20px;
+}
+.offer1>img{
+    width: 100%;
+}
+.offer1>h3,.offer1>p{
+    text-align: center;
+    margin: 20px;
+    font-weight: 60;
+}
+.offer1>button{
+    width: 120px;
+    height: 50px;
+    background-color: whitesmoke;
+    margin-left: 270px;
+}
+.offer1>h3{
+    font-size: 30px;
+}
+.branding{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+    margin-top: 90px;
+}
+.branding img{
+    width: 100%;
+}
+#extra{
+    display: flex;
+    gap: 20px;
+}
+.buying>img{
+    width: 100%;
+}
+.buying>h3{
+    text-align: center;
+    margin: 20px;
+    font-weight: 60;
+}
+.buying>button{
+    width: 450px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #fba452;
+}
+.buying>button>i{
+    margin-right: 10px;
+}
+.fullsize{
+    margin-top: 40px;
+}
+.fullsize img{
+    width: 100%;
+}
+footer{
+    margin-top: 30px;
+}
+footer>div>hr{
+    size: 1px;
+    background-color: #000;
+}
+h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+#foot1>button{
+    height: 60px;
+    width: 90px;
+    color: antiquewhite;
+    background-color: #000;
+    margin-left: 3px;
+    margin-bottom: 40px;
+}
+#foot1>ul{
+    list-style: none;
+}
+#foot1>ul>li{
+    width: 500px;
+    margin: 15px;
+    padding: 15px;
+}
+#foot1>ul>li>a{
+    text-decoration: none;
+    font-weight: 20;
+    font-size: 25px;
+     
+    color: rgb(10, 9, 9);
+}
+#foot1>ul>li>a>i{
+    margin-right: 10px;
+}
+#footmain{
+    display: flex;
+    margin-right: 50px;
+}
+#foot2{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 90px;
+    
 }
