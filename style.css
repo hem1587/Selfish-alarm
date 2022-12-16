@@ -14,7 +14,7 @@
     display: flex;
    
     align-items: center;
-   padding: 10px 0px; 
+   
    
 }
 .search {
@@ -44,6 +44,7 @@
     outline: 3px;
     font-size: 20px;
 }
+
 #loginBtn{
     padding: 7px 50px;
     font-size: 16px;
@@ -61,6 +62,11 @@
     outline: none;
     margin-right: 40px;
 }
+#log{
+    border: 3px;
+    color: antiquewhite;
+    background-color: #0e130d;
+}
 #drop_down ul{
     display: inline-flex;
     list-style: none;
@@ -76,7 +82,7 @@
     font-size: 30px;
 }
 #drop_down ul li:hover{
-    background: #2bab0b;
+    background: whitesmoke;
     border-radius: 3px;
 }
 #sub-menu-1{
@@ -101,7 +107,7 @@ display: none;
 #drop_down ul li:hover #sub-menu-1{
     display: block;
     position: absolute;
-    background-color: blue;
+    background-color: whitesmoke;
     margin-top: 15px;
     margin-left: -15px;
 }
@@ -227,48 +233,89 @@ gap: 20px;
 footer{
     margin-top: 30px;
 }
-footer>div>hr{
-    size: 1px;
-    background-color: #000;
+.footer{
+    background-color: whitesmoke;
 }
-h4{
-    font-size: 25px;
-    margin-bottom: 10px;
-    margin-left: 3px;
+.container{
+    max-width: 90%;
+   
+    margin: auto;
 }
-#foot1>button{
+.row{
+    display: flex;
+    flex-wrap: ;
+}
+#hr1{
+    margin-top: 30px;
+}
+ul{
+    list-style: none;
+}
+.foot1{
+    width: 50%;
+    padding: 0 15px;
+}
+.foot1 h4{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.foot1 button{
+    margin-bottom: 30px;
+    color: white;
+    background-color: #0e130d;
+    font-size: large;
     height: 60px;
     width: 90px;
-    color: antiquewhite;
-    background-color: #000;
-    margin-left: 3px;
-    margin-bottom: 40px;
 }
-#foot1>ul{
-    list-style: none;
+.foot1 ul li{
+    margin-bottom: 10px;
 }
-#foot1>ul>li{
-    width: 500px;
-    margin: 15px;
-    padding: 15px;
-}
-#foot1>ul>li>a{
+.foot1 ul li a{
+    font-size: 20px;
+    color: #000;
+    text-transform: capitalize;
     text-decoration: none;
-    font-weight: 20;
-    font-size: 25px;
-     
-    color: rgb(10, 9, 9);
+    font-weight: 100;
+    margin-bottom: 20px;
+    display: block;
+    transition: all 0.3s ease;
 }
-#foot1>ul>li>a>i{
-    margin-right: 10px;
+.foot1 ul li a:hover{
+    color: #0e130d;
+    padding-left: 10px;
 }
-#footmain{
-    display: flex;
-    margin-right: 50px;
-}
-#foot2{
-    display: inline-flex;
-    list-style: none;
-    margin-left: 90px;
+.foot1 .social-links a i{
+    font-size: xx-large;
     
 }
+.foot1 .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color:whitesmoke;
+    margin: 0 0px 0px 0;
+    margin-bottom: 45px;
+    text-align:center ;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.foot1 .social-links a :hover{
+    color: aqua;
+    background-color: aquamarine;
+}
+.indiv{
+    display: flex;
+
+}
+.in{
+    margin-right: 60px;
+    margin-left: 20px;
+}
+.hr2{
+    width: 250px;
+}
+
