@@ -6,6 +6,7 @@
 *{
     box-sizing: border-box;
 }
+
 .logo{
     margin-right: 200px;
     margin-left: 30px;
@@ -233,6 +234,9 @@ gap: 10px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
+}
+.buying{
+    text-align: center;
 }
 .buying>img{
     width: 100%;
