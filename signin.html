@@ -10,23 +10,43 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="#"><img src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png" alt=""></a>
+            <a href="home.html"><img src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png" alt=""></a>
           </div>
    
           <div><hr></div>
     </nav>
     <div class="signin">
         <h1>Login</h1>
-        <form>
+        <form id="userform2">
             <label>Email Adress</label>
-            <input type="email" placeholder=""> 
+            <input type="email" placeholder="" id="emailaddress"> 
             <label >Password</label>
-            <input type="password" placeholder="">
-            <input type="button" value="Submit">
+            <input type="password" placeholder="" id="password">
+            <input type="button" value="Submit" id="button">
         </form>
 
     </div>
     <p class="para">Not have an account?<a href="sign up.html">Sign Up Here</a></p>
     
 </body>
+<script>
+    let signupdata=document.getElementById("userform2");
+    let info=JSON.parse(localStorage.getItem("info-data"))||[];
+
+      button.addEventListener("click",(event)=>{
+        let formdata={
+            useremail:signupdata.emailaddress.value,
+            userpass:signupdata.password.value,
+        };
+        info.forEach((element,index) => {
+           if(element.email==formdata.useremail&&element.password==formdata.userpass){
+            alert("Suceessfully logged in")
+            console.log(formdata.useremail)
+           }else{
+            alert("Something wrong happened");
+            event.preventDefault();
+           }
+        });
+      })
+</script>
 </html>

@@ -10,7 +10,7 @@
 <body> 
     <nav>
         <div class="logo">
-            <a href="#"><img src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png" alt=""></a>
+            <a href="home.html"><img src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png" alt=""></a>
           </div>
    
           <div><hr></div>
@@ -18,20 +18,36 @@
     
         <div class="signup">
              <h1>Sign Up</h1>
-             <form>
+             <form id="userform">
                 <label >First Name</label>
-                <input type="text" placeholder="">
+                <input type="text" id="name">
                 <label >Last Name</label>
-                <input type="text" placeholder="">
+                <input type="text" id="lastname">
                 <label>Email Address</label>
-                <input type="email" placeholder=""> 
+                <input type="email" id="useremail"> 
                 <label >Password</label>
-                <input type="password" placeholder="">
-                <input type="button" value="Submit">
+                <input type="password" id="pass">
+                <input type="button" value="Submit" id="button">
 
              </form>
         </div>
         <p class="para">Already have an account?<a href="signin.html">Sign In Here</a></p>
     
 </body>
+<script>
+    let signupdata=document.getElementById("userform");
+    let button=document.getElementById("button")
+    let info=JSON.parse(localStorage.getItem("info-data"))||[];
+    button.addEventListener("click",(event)=>{
+    let formdata={
+        name:signupdata.name.value,
+        lastname:signupdata.lastname.value,
+        email:signupdata.useremail.value,
+        password:signupdata.pass.value,
+
+    };
+    info.push(formdata);
+    localStorage.setItem("info-data",JSON.stringify(info));
+    });
+</script>
 </html>
