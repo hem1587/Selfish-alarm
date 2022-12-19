@@ -8,8 +8,16 @@
 }
 
 .logo{
-    margin-right: 200px;
-    margin-left: 30px;
+   
+   width: 400px;
+   height: 100px;
+   margin-right: 100px;
+   margin-left: 20px;
+   text-align: center;
+    margin-top: 5px;
+}
+.logo>img{
+    width: 100%;
 }
 
 
